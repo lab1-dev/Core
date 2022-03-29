@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "module": "es6",
+      "target": "es2017",
+      "declaration": true,//to generate d.ts files
+      "moduleResolution": "node",
+      "sourceMap": false,
+      "removeComments": true,
+      "inlineSources": false,//todo ver se precisa mesmo. o ui-react router usa
+      "allowJs": true,
+      "strict": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,//required by decorators
+      "forceConsistentCasingInFileNames": true,
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": ".",
+      "lib": ["es2015","dom"]
+    },
+    "include": [
+      "index.ts"
+    ],
+  "exclude": ["node_modules"],
+  "typedocOptions": {
+      "out": "docs",
+      "excludePrivate": true,
+      "disableSources": true
+    }
+  }
