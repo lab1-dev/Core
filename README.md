@@ -27,7 +27,7 @@ Components created in <b>@lab1/core</b> and <b>@lab1/material</b> use <a style="
 @component
 export class Button implements ButtonProps{
 	readonly onClick = new Signal<(ev:MouseEvent) => void>();
-    readonly text = new Property<string>(this,'');
+	readonly text = new Property<string>(this,'');
 
 	constructor(props: ButtonProps) {
     	super({...{element: document.createElement('button')}, ...props});
