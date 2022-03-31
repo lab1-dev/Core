@@ -12,6 +12,7 @@ function defaultProps(): Partial<RowLayoutProps> {
 export class RowLayout extends Layout implements ILogger, RowLayoutProps {
 
     //region properties
+    readonly childContent = new Property<any>(this, undefined);
     readonly alignChildContent = new Property<Align>(this, Align.Left | Align.Top);
     readonly spacing = new Property<number | undefined>(this, undefined);
     readonly wrap = new Property<Wrap>(this, Wrap.NoWrap);
@@ -44,6 +45,7 @@ export class RowLayout extends Layout implements ILogger, RowLayoutProps {
     public render(firstRender: boolean = false): void {
         super.render(firstRender);
 
+        this.setChildContent(this.childContent.value);
         if(Align.FillWidth==(this.alignChildContent.value & Align.FillWidth))console.warn('FillWidth is ignored in RowLayout.');
         StyleHelper.setPixelAttr(this.element!,'gap',undefined,this.spacing.value);
         //Items Wrap

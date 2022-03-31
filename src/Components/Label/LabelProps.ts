@@ -1,4 +1,4 @@
-import {ComponentProps, TypeString, TypeStringOrUndefined, TypeTextAlign} from "../../CoreExports";
+import {ComponentProps, TypeSignal_MouseEvent, TypeString, TypeStringOrUndefined, TypeTextAlign} from "../../CoreExports";
 
 export interface LabelProps extends ComponentProps{
     text?:TypeString
@@ -6,4 +6,7 @@ export interface LabelProps extends ComponentProps{
     font?:TypeString
     fontWeight?:TypeString
     color?:TypeStringOrUndefined
+
+    //Signals
+    onClick?: TypeSignal_MouseEvent
 }

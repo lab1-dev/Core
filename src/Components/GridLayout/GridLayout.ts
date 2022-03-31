@@ -10,6 +10,7 @@ function defaultProps(): Partial<GridLayoutProps> {
 export class GridLayout extends Layout implements ILogger, GridLayoutProps {
 
     //region properties
+    readonly childContent = new Property<any>(this, undefined);
     readonly alignChildContent = new Property<Align>(this, Align.Left | Align.Top);
     readonly rows = new Property<number|string>(this, 0);
     readonly columns = new Property<number|string>(this, 0);
@@ -37,6 +38,8 @@ export class GridLayout extends Layout implements ILogger, GridLayoutProps {
 
     public render(firstRender: boolean = false): void {
         super.render(firstRender);
+
+        this.setChildContent(this.childContent.value);
 
         if (this.rows.value < 1 || this.columns.value < 1) return;
         this.element!.style.gridTemplateRows = '';

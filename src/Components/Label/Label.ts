@@ -1,5 +1,5 @@
+import { Signal } from 'typed-signals';
 import {TextAlign, Component, Property, LabelProps, StyleHelper} from '../../CoreExports';
-//import type {LabelProps} from "./LabelProps";
 
 //@component
 export class Label extends Component implements LabelProps {
@@ -12,9 +12,14 @@ export class Label extends Component implements LabelProps {
     readonly color = new Property<string | undefined>(this, undefined);
     //endregion
 
+    //region Events and others
+    readonly onClick = new Signal<(ev:MouseEvent) => void>();
+    //endregion
+
     constructor(props: LabelProps) {
         super({...{element: document.createElement('vlabel')}, ...props});
         this.element!.style.cursor = "default"
+        this.element!.onclick=(ev)=>this.onClick.emit(ev);
 
         //Button properties
         this.readProperties(props, true);
