@@ -1,10 +1,8 @@
 # Lab1 Core
 
-Lab1 is a typescript framework intended to remove complexities, integrate concepts and bring intuition, simplicity and beauty back into the code to provide the foundation that allows the creation of pro-life applications in accordance with the [Law of One](https://lab1.dev/law-of-one) principles. Thus, this project relies on an open source license that allows its use in projects that are in favor of life and Unity Consciousness.
+Lab1 is a typescript framework intended to remove complexities, integrate concepts and bring intuition, simplicity and beauty back into the code.
 
-After working more than 22 years with software development and several languages, I noticed that languages and tools were becoming more and more complex, generating mental fragmentation in many developers, obstructing creativity and the construction of the final product. Many applications are unhealthy while others are intentionally created to accumulate large amounts of capital and power, without the slightest concern for others and the damage caused to other people's lives.
-
-Thus, this project is intended to provide intuitive tools that allow creativity to flow unobstructed to create products that are truly pro-life and pro-human. The project is still in an early stage and all contributions are welcome. If you or the company you work for aligns with the principles of this project, please consider helping to develop or support it financially. 
+After working more than 22 years with software development and several languages, I noticed that languages and tools were becoming more and more complex, generating mental fragmentation in many developers, obstructing creativity and the construction of the final product. Thus, this project is intended to provide intuitive tools that allow creativity to flow unobstructed to create awesome products. The project is still in an early stage and all contributions are welcome. If you or the company you work for aligns with the principles of this project, please consider helping to develop or support it financially. 
 
 [Lab1 website](https://lab1.dev) contains the documentation and sample codes illustrating the usage with core components and material design components. 
 
